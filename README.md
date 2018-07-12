@@ -9,4 +9,4 @@ My DCGAN code is from https://github.com/carpedm20/DCGAN-tensorflow.
 I wrote most of the code for retrieving the embeddings.
 
 Examples of generated images:
-![Generated Images of College Campuses](http://url/to/img.png)
+![Generated Images of College Campuses](https://github.com/jasonwei20/campus-gan/blob/master/train_286_0008.png)
