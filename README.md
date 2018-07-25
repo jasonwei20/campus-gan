@@ -19,7 +19,6 @@ Examples of generated images:
 With  my  own  methodology,  I  attempt  to  determine  what  level  of  abstraction  GANs  begin  to  fail  (at  which level can discriminative methods distinguish generated images from authentic ones).  To do so, I chose a sample of 64 generated images and 64 real images.  I passed each image through a 18-layer Resnet pre-trained on the ImageNet dataset.  I then retrieve the embeddings for each of the images after residual layers 1, 2, 3, and 4, and average pool over the depth of the convolutional block such that I then have 1-D embeddings of size 512, 256, 128, and 64, respectively.  I plot the tSNE embeddings and examine them visually, and I also use PCA to compress the data points into two dimensions and run unsupervised k-means clustering, as well as a supervised support  vector  machine  to  get  misclassification  accuracies  to  represent  the  level  of  clustering  in  each  of  thedistributed representations.
 
 For each layer of the ResNet, I plot the tSNE representations of the embeddings after average pooling over the depth of the convolutional block.
-
 <img src="comparison_test/tsne_layer_1.jpg" width="23%">
 <img src="comparison_test/tsne_layer_2.jpg" width="23%">
 <img src="comparison_test/tsne_layer_3.jpg" width="23%">
